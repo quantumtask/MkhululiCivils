@@ -218,6 +218,8 @@ h3 {
 
 .section {
   padding: 4.4rem 6vw;
+  position: relative;
+  isolation: isolate;
 }
 
 .section-head h2 {
@@ -229,6 +231,110 @@ h3 {
   background: linear-gradient(180deg, rgba(246, 238, 224, 0.75), rgba(242, 232, 217, 0.75));
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+
+#services {
+  background: linear-gradient(180deg, rgba(255, 252, 246, 0.98), rgba(252, 245, 235, 0.96));
+}
+
+#services::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, #c95f2d, #e09a4d, #c95f2d);
+}
+
+#sectors {
+  background:
+    radial-gradient(circle at 85% 15%, rgba(218, 140, 63, 0.15), transparent 32%),
+    linear-gradient(160deg, rgba(244, 234, 215, 0.96), rgba(240, 226, 202, 0.94));
+}
+
+#sectors .section-head h2 {
+  color: #2a2f36;
+}
+
+#global {
+  background: linear-gradient(135deg, #14283b 0%, #1c3650 52%, #234361 100%);
+  color: #f4f8fc;
+}
+
+#global .tag {
+  color: #ffd3ac;
+}
+
+#global .section-head h2 {
+  color: #ffffff;
+}
+
+#global .project {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(10, 19, 31, 0.3);
+}
+
+#global .project p,
+#global .project ul {
+  color: rgba(236, 244, 250, 0.93);
+}
+
+#projects {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.66)),
+    repeating-linear-gradient(-18deg, rgba(199, 176, 138, 0.17) 0 14px, rgba(255, 255, 255, 0) 14px 28px);
+}
+
+#projects .project {
+  border-left: 6px solid #c47a37;
+}
+
+#process {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(181, 82, 35, 0.18), transparent 26%),
+    linear-gradient(180deg, rgba(247, 238, 224, 0.95), rgba(241, 228, 209, 0.95));
+}
+
+#process .step {
+  background: #fff7ea;
+  border-color: #dbbe95;
+}
+
+#about {
+  background: linear-gradient(120deg, rgba(255, 250, 241, 0.97), rgba(243, 236, 224, 0.97));
+}
+
+#about .about-copy {
+  background: linear-gradient(180deg, #fffdfa, #f9f2e6);
+}
+
+.faq {
+  background:
+    linear-gradient(180deg, rgba(243, 233, 216, 0.96), rgba(238, 226, 206, 0.96)),
+    radial-gradient(circle at 12% 10%, rgba(212, 142, 73, 0.2), transparent 25%);
+}
+
+.faq .panel {
+  border-color: #d4b083;
+  background: #fffbf4;
+}
+
+#contact {
+  background: linear-gradient(140deg, #1a2f43 0%, #1f3a53 46%, #28506f 100%);
+  color: #eef6fc;
+}
+
+#contact .tag {
+  color: #ffcca1;
+}
+
+#contact .section-head h2 {
+  color: #ffffff;
+}
+
+#contact .contact-card,
+#contact .contact-form {
+  background: rgba(255, 255, 255, 0.96);
 }
 
 .grid {
